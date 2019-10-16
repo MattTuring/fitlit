@@ -23,7 +23,7 @@ class UserActivity {
 
   userStepCountByWeek() {
     return this.filteredActivity.slice(-7).map(activity => activity.numSteps)
-  };
+  }
 
   userMinutesActiveByDate() {
     let minutesActive = this.filteredActivity.slice(-1)
@@ -112,9 +112,9 @@ class UserActivity {
         counter = 0;
         return activityObject.userID === this.userData.id;
       }
-        steps = activityObject.numSteps
+      steps = activityObject.numSteps
     })
-  return activityDataFilter
+    return activityDataFilter
   }
 }
 

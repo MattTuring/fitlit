@@ -133,7 +133,7 @@ $(function() {
     data: {
       labels: ["Alltime Average Hours Slept", "Alltime Average Sleep Quality"],
       datasets: [{
-        label: 'Alltime Average Sleep Numebrs',
+        label: 'Alltime Average Sleep Numbers',
         data: [userSleep.avgUserHoursSleptPerDay(randomUser), userSleep.avgUserSleepQualityDateAllTime(randomUser)],
         backgroundColor: ['#DDE65C', '#3A8DA5'],
       }]
@@ -212,7 +212,7 @@ $(function() {
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero: true
+            beginAtZero: false
           }
         }]
       }
