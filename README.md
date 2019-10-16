@@ -22,3 +22,6 @@ The goal of this project was to create a data dashboard for an activity tracker 
 
 Screen Image
 ![FitLit Site Screen]()
+
+GIF
+![FitLit GIF](https://github.com/MattTuring/fitlit/blob/master/img/fit_lit.gif)
