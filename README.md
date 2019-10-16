@@ -2,9 +2,9 @@
 
 Project By:
 Allison Wagner [GitHub Account](https://github.com/allisonjw)
-Matthew [GitHub Account]
+Matthew Towarnicky [GitHub Account]()
 
-Link to the project [GitHub Repo](h)
+Link to the project [GitHub Repo]()
 
 ## Description
 
@@ -21,7 +21,7 @@ The goal of this project was to create a data dashboard for an activity tracker 
 - drabbabilly.js
 
 Screen Image
-![FitLit Site Screen]()
+![FitLit Site Screen](https://github.com/MattTuring/fitlit/blob/master/img/_Users_allisonwagner_projects_FitLit_src_index.html%20(1).png)
 
 GIF
 ![FitLit GIF](https://github.com/MattTuring/fitlit/blob/master/img/fit_lit.gif)
