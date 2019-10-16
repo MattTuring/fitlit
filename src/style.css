@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: #8ca3b3;
+  background-color: #f7f5f5;
   /* display: grid; */
   height: 100vh;
   /* grid-auto-rows: 1fr 10fr; */
@@ -14,17 +17,18 @@ body {
 }
 
 header {
-  background-color: #ffffff6b;
+  background-color: #3F52B5;
   box-shadow: 3px 3px 10px black;
   /* grid-area: header; */
   padding-bottom: 10px;
   margin-bottom: 10px;
   text-align: center;
+  color: #f0eaff;
 }
 
 h1 {
-  color: #630c0c;
-  font-size: 4em;
+  color: #f0eaff;
+  font-size: 3em;
   margin-bottom: 10px;
 }
 
@@ -32,9 +36,9 @@ div {
   display: inline-flex;
 }
 
-div p {
+/* div p {
   font-size: 1.3em;
-}
+} */
 
 header h2 {
   font-size: 2.5em;
@@ -42,23 +46,24 @@ header h2 {
 }
 
 .span__currentUser {
-  color: #630c0c;
+  color: #bba1f9;
   font-style: italic;
 }
 
 span {
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   font-weight: 700;
   margin: 0 6px 0 6px;
+  word-break: break-all;
 }
 
 main {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF;
   background-image: url('../img/field.gif');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 3px 3px 10px black; */
   display: grid;
   grid-area: main;
   grid-template-areas: "column";
@@ -91,7 +96,7 @@ h2 ~ p {
 .grid-item {
   background-color: #ffffffbf;
   border: 1px solid;
-  border-radius: 10px;
+  border-radius: 2px;
   box-shadow: 1px 1px 6px #212b32;
   float: left;
   height: max-content;
@@ -124,4 +129,3 @@ outline-offset: -6px;
 .section__sleep--step-feedback {
   font-style: italic;
 }
-
