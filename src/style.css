@@ -8,18 +8,13 @@
 
 body {
   background-color: #f7f5f5;
-  /* display: grid; */
   height: 100vh;
-  /* grid-auto-rows: 1fr 10fr; */
-  /* grid-template-areas: "header" */
-  /* "main"; */
   margin: 0;
 }
 
 header {
   background-color: #3F52B5;
   box-shadow: 3px 3px 10px black;
-  /* grid-area: header; */
   padding-bottom: 10px;
   margin-bottom: 10px;
   text-align: center;
@@ -51,19 +46,12 @@ header h2 {
 }
 
 span {
-  /* font-size: 1.1em; */
   font-weight: 700;
   margin: 0 6px 0 6px;
   word-break: break-all;
 }
 
 main {
-  /* background-color: #FFFFFF;
-  background-image: url('../img/field.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  box-shadow: 3px 3px 10px black; */
   display: grid;
   grid-area: main;
   grid-template-areas: "column";

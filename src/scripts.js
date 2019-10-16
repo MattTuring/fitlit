@@ -51,7 +51,7 @@ $(function() {
       datasets: [{
         label: 'Water Consumed Per',
         data: userHydration.userOuncesByWeek(),
-        backgroundColor: ['rgb(112, 28, 1, 0.7)', 'rgb(112, 56, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 111, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(112, 28, 1, 0.7)'],
+        backgroundColor: ['#DDE65C', '#6FACBD', '#FFAF1A', '#133C55', '#D95F32', '#FFAF1A', '#DDE65C'],
       }]
     },
     options: {
@@ -72,7 +72,7 @@ $(function() {
       datasets: [{
         label: 'Today\'s Sleep Numbers',
         data: [userSleep.userSleepHoursByDate(randomUser, today), userSleep.userSleepQualityByDate(randomUser, today)],
-        backgroundColor: ['rgb(112, 56, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 111, 1, 0.7)'],
+        backgroundColor: ['#6FACBD', '#D95F32'],
       }]
     },
     options: {
@@ -93,7 +93,7 @@ $(function() {
       datasets: [{
         label: 'Hours Slept This Week',
         data: userSleep.userDailySleepHoursByWeek(),
-        backgroundColor: ['rgb(112, 84, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 84, 1, 0.7)'],
+        backgroundColor: ['#DDE65C'],
       }]
     },
     options: {
@@ -114,7 +114,7 @@ $(function() {
       datasets: [{
         label: 'Quality Sleep This Week',
         data: userSleep.userDailySleepQualityByWeek(),
-        backgroundColor: ['rgb(85, 112, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(85, 112, 1, 0.7)'],
+        backgroundColor: ['#133C55'],
       }]
     },
     options: {
@@ -135,7 +135,7 @@ $(function() {
       datasets: [{
         label: 'Alltime Average Sleep Numebrs',
         data: [userSleep.avgUserHoursSleptPerDay(randomUser), userSleep.avgUserSleepQualityDateAllTime(randomUser)],
-        backgroundColor: ['rgb(112, 28, 1, 0.7)', 'rgb(112, 56, 1, 0.7)', 'rgb(112, 28, 1, 0.7)'],
+        backgroundColor: ['#DDE65C', '#3A8DA5'],
       }]
     },
     options: {
@@ -156,7 +156,7 @@ $(function() {
       datasets: [{
         label: 'Step Goal Comparison',
         data: [userData[randomUser].dailyStepGoal, usersRepo.avgStepGoal()],
-        backgroundColor: ['rgb(112, 56, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)'],
+        backgroundColor: ['#FFAF1A', '#133C55'],
       }]
     },
     options: {
@@ -184,7 +184,7 @@ let friendsActivityLastWeek = friends.map(e => userActivity.userStepsByWeek(e));
       datasets: [{
         label: 'Step Goal Weekly Average',
         data: friendsActivityLastWeek,
-        backgroundColor: ['rgb(112, 56, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)'],
+        backgroundColor: ['#FFAF1A', '#EE6836', '#EE6836', '#EE6836', '#EE6836'],
       }]
     },
     options: {
@@ -205,7 +205,7 @@ let friendsActivityLastWeek = friends.map(e => userActivity.userStepsByWeek(e));
       datasets: [{
         label: 'Your vs. All Users Activity',
         data: [userActivity.userStepsByDate(randomUser, today), userActivity.usersActivityAvgByDate('numSteps'), userActivity.userMinutesActiveByDate(randomUser, today), userActivity.usersActivityAvgByDate('minutesActive'), userActivity.userStepsByDate(randomUser, today), userActivity.usersActivityAvgByDate('flightsOfStairs')],
-        backgroundColor: ['rgb(112, 28, 1, 0.7)', 'rgb(112, 56, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 111, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(112, 28, 1, 0.7)'],
+        backgroundColor: ['#DDE65C', '#6FACBD', '#FFAF1A', '#133C55', '#D95F32', '#FFAF1A', '#DDE65C'],
       }]
     },
     options: {
@@ -226,7 +226,7 @@ let friendsActivityLastWeek = friends.map(e => userActivity.userStepsByWeek(e));
       datasets: [{
         label: 'Weekly View of Step Count',
         data: userActivity.userStepCountByWeek(randomUser),
-        backgroundColor: ['rgb(112, 28, 1, 0.7)', 'rgb(112, 56, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 111, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(112, 28, 1, 0.7)'],
+        backgroundColor: ['#103246', '#CAD800', '#FFAF1A', '#3A8DA5', '#EE6836', '#103246', '#CAD800'],
       }]
     },
     options: {
@@ -247,7 +247,7 @@ let friendsActivityLastWeek = friends.map(e => userActivity.userStepsByWeek(e));
       datasets: [{
         label: 'Weekly View of Minutes Active',
         data: userActivity.userMinutesActiveByWeek(randomUser),
-        backgroundColor: ['rgb(112, 28, 1, 0.7)', 'rgb(112, 56, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 111, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(112, 28, 1, 0.7)'],
+        backgroundColor: ['#EE6836', '#3A8DA5', '#CAD800', '#103246', '#FFAF1A', '#EE6836', '#3A8DA5'],
       }]
     },
     options: {
@@ -268,7 +268,7 @@ let friendsActivityLastWeek = friends.map(e => userActivity.userStepsByWeek(e));
       datasets: [{
         label: 'Weekly View of Stairs Climbed',
         data: userActivity.userStairsClimbedByWeek(randomUser),
-        backgroundColor: ['rgb(112, 28, 1, 0.7)', 'rgb(112, 56, 1, 0.7)', 'rgb(112, 84, 1, 0.7)', 'rgb(112, 111, 1, 0.7)', 'rgb(85, 112, 1, 0.7)', 'rgb(57, 112, 1, 0.7)', 'rgb(112, 28, 1, 0.7)'],
+        backgroundColor: ['#DDE65C', '#6FACBD', '#FFAF1A', '#133C55', '#D95F32', '#FFAF1A', '#DDE65C'],
       }]
     },
     options: {
