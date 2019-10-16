@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 body {
@@ -15,10 +15,10 @@ body {
 header {
   background-color: #3F52B5;
   box-shadow: 3px 3px 10px black;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  text-align: center;
   color: #f0eaff;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 h1 {
@@ -31,18 +31,15 @@ div {
   display: inline-flex;
 }
 
-/* div p {
-  font-size: 1.3em;
-} */
-
 header h2 {
   font-size: 2.5em;
   margin-bottom: 15px;
 }
 
 .span__currentUser {
-  color: #bba1f9;
+  color: #DDE65C;
   font-style: italic;
+  margin-left: 10px;
 }
 
 span {
@@ -76,9 +73,9 @@ h2 ~ p {
 }
 
 .grid:after {
+  clear: both;
   content: '';
   display: block;
-  clear: both;
 }
 
 .grid-item {
@@ -99,19 +96,18 @@ h2 ~ p {
   cursor: move;
   transform: scale(0.9);
   transition: all .5s ease-in-out;
-  }
+}
 
 .grid-item.is-dragging,
 .grid-item.is-positioning-post-drag {
     background: #EA0;
-    z-index: 2;
 }
 
 .packery-drop-placeholder {
-outline: 3px dashed hsla(0, 0%, 0%, 0.5);
-outline-offset: -6px;
--webkit-transition: -webkit-transform 0.2s;
-        transition: transform 0.2s;
+  outline: 3px dashed hsla(0, 0%, 0%, 0.5);
+  outline-offset: -6px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .section__sleep--step-feedback {

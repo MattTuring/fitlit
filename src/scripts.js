@@ -49,7 +49,7 @@ $(function() {
     data: {
       labels: ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7"],
       datasets: [{
-        label: 'Water Consumed Per',
+        label: 'Weekly View of Water Drank',
         data: userHydration.userOuncesByWeek(),
         backgroundColor: ['#DDE65C', '#6FACBD', '#FFAF1A', '#133C55', '#D95F32', '#FFAF1A', '#DDE65C'],
       }]
@@ -171,11 +171,11 @@ $(function() {
   });
 
 
-const friends = user.getFriends();
+  const friends = user.getFriends();
 
-friends.unshift(userData[randomUser].id);
+  friends.unshift(userData[randomUser].id);
 
-let friendsActivityLastWeek = friends.map(e => userActivity.userStepsByWeek(e));
+  let friendsActivityLastWeek = friends.map(e => userActivity.userStepsByWeek(e));
 
   const stepGoalFriends = new Chart($('#stepGoalFriends'), {
     type: 'bar',
@@ -281,7 +281,5 @@ let friendsActivityLastWeek = friends.map(e => userActivity.userStepsByWeek(e));
       }
     }
   });
-
-  //dispaly on dom
 
 });
