@@ -56,6 +56,10 @@ describe('UserActivity', () => {
     expect(userActivity.userStairsClimbedByWeek()).to.eql([18, 33, 2, 12, 6, 6, 21]);
   });
 
+  it('should return user stairs climbed for one week', () => {
+    expect(userActivity.userStairsClimbedByDate()).to.eql([21]);
+  });
+
   it('should return user stepgoal met by date', () => {
     expect(userActivity.userStepGoalMetAllTime()).to.deep.equal(["2019/06/17", "2019/06/20", "2019/06/22", "2019/06/23"]);
   });

@@ -204,7 +204,7 @@ $(function() {
       labels: ['Your Steps', 'Users Steps', 'Your Min Active', 'Users Min Active', 'Your Stairs Climbed', 'Users Stairs Climbed'],
       datasets: [{
         label: 'Your vs. All Users Activity',
-        data: [userActivity.userStepsByDate(randomUser, today), userActivity.usersActivityAvgByDate('numSteps'), userActivity.userMinutesActiveByDate(randomUser, today), userActivity.usersActivityAvgByDate('minutesActive'), userActivity.userStepsByDate(randomUser, today), userActivity.usersActivityAvgByDate('flightsOfStairs')],
+        data: [userActivity.userStepsByDate(randomUser, today), userActivity.usersActivityAvgByDate('numSteps'), userActivity.userMinutesActiveByDate(randomUser, today), userActivity.usersActivityAvgByDate('minutesActive'), userActivity.userStairsClimbedByDate()[0], userActivity.usersActivityAvgByDate('flightsOfStairs')],
         backgroundColor: ['#DDE65C', '#6FACBD', '#FFAF1A', '#133C55', '#D95F32', '#FFAF1A', '#DDE65C'],
       }]
     },

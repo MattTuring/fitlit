@@ -64,6 +64,10 @@ class UserActivity {
     return this.filteredActivity.slice(-7).map(activityObject => activityObject.flightsOfStairs)
   }
 
+  userStairsClimbedByDate() {
+    return this.filteredActivity.slice(-1).map(activityObject => activityObject.flightsOfStairs)
+  }
+
   userStepGoalMetAllTime() {
     let activityDataFilter = this.activityData.filter(activityObject => {
       if (activityObject.numSteps > this.userData.dailyStepGoal) {
