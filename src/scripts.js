@@ -131,7 +131,7 @@ $(function() {
   const alltimeAvgSleepNums = new Chart($('#alltimeAvgSleep'), {
     type: 'bar',
     data: {
-      labels: ["Alltime Average Hours Slept", "Alltime Average Sleep Quality"],
+      labels: ['Alltime Average Hours Slept', 'Alltime Average Sleep Quality'],
       datasets: [{
         label: 'Alltime Average Sleep Numbers',
         data: [userSleep.avgUserHoursSleptPerDay(randomUser), userSleep.avgUserSleepQualityDateAllTime(randomUser)],

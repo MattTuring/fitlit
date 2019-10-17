@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f7f5f5;
+  background-color: #c1bbbb8a;
   height: 100vh;
   margin: 0;
 }
@@ -23,12 +23,13 @@ header {
 
 h1 {
   color: #f0eaff;
-  font-size: 3em;
+  font-size: 3.5em;
   margin-bottom: 10px;
 }
 
 div {
   display: inline-flex;
+  font-size: 1.2em;
 }
 
 header h2 {
@@ -50,9 +51,7 @@ span {
 
 main {
   display: grid;
-  grid-area: main;
   grid-template-areas: "column";
-  grid-template-columns: 1fr 1fr;
   height: max-content;
   margin: auto;
 }
@@ -93,6 +92,7 @@ h2 ~ p {
 
 .grid-item:hover {
   border-color: hsla(0, 0%, 100%, 0.5);
+  box-shadow: 4px 4px 6px #3F52B5;
   cursor: move;
   transform: scale(0.9);
   transition: all .5s ease-in-out;
