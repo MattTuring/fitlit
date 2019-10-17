@@ -4,7 +4,7 @@ Project By:
 Allison Wagner [GitHub Account](https://github.com/allisonjw)
 Matthew Towarnicky [GitHub Account](https://github.com/MattTuring)
 
-Link to the project [GitHub Repo](https://github.com/MattTuring/fitlit/blob/master/src/index.html)
+Link to the project [GitHub Repo](https://github.com/MattTuring/fitlit/src/index.html)
 
 ## Description
 
